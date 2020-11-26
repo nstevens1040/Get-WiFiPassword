@@ -10,4 +10,9 @@ To make the function available in PowerShell. Launch PowerShell as administrator
     Set-ExecutionPolicy -Scope "$($_ |% Scope)" -ExecutionPolicy Unrestricted
 })
 iex ([System.Net.WebClient]@{Proxy=$null;}).DownloadString("https://raw.githubusercontent.com/nstevens1040/Get-WiFiPassword/main/Get-WifiPassword.ps1")
-```
+```  
+# Usage  
+```ps1
+Get-WifiPw [[-Wifi_SSID] <string>]  [<CommonParameters>]
+```  
+If no argument for **Wifi_SSID** is not provided, then the currently connected Wifi SSID will be selected.  
