@@ -1,7 +1,7 @@
 # Get-WiFiPassword  
 If a Wi-Fi password is stored in your "known networks", then this PowerShell function will return the Wi-Fi password given the "WiFi_SSID" parameter.
 # Installation  
-To make the function available in PowerShell. Launch PowerShell as administrator and run the following.  
+To make the function available in PowerShell. Launch PowerShell and run the following.  
 ```ps1
 @(Get-ExecutionPolicy -List).Where({
     $_.ExecutionPolicy -ne 'Unrestricted' -and `
